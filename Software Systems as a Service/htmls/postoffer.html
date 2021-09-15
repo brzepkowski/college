@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : ColoreGiallo
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20121026
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Post FOODIE</title>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="index.html">Foodie</a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">Homepage</a></li>
+					<li><a href="search.html">Search</a></li>
+					<li class="current_page_item"><a href="postoffer.html">Post offer</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="banner_long">
+
+      <form class="text_form" name="form_food" style="height:300px;">
+				<div class="field">
+          <p>Name</p>
+        </div>
+        <div class="field">
+          <p>Food item description</p>
+        </div>
+        <div style="margin-top:50px;" class="field">
+          <p>Expiration date [optional]</p>
+        </div>
+      </form>
+      <form class="register_form" name="form_food_desc" method="POST" action="registration" style="height:300px;">
+				<div class="field">
+          <input style="width:185px;margin-left:0px;" type="text" name="food_name">
+        </div>
+        <div class="field">
+          <textarea style="height:100px;width:200px;" type="text" name="food_description"></textarea>
+        </div>
+        <div class="field">
+          <input style="margin-top:10px;width:185px;margin-left:0px;" type="text" name="expiration_date">
+        </div>
+        <div class="submit_acc_button">
+        <input name="submit_account_button" type="button" onclick="post_offer(this.form)" value="Post offer"/>
+      </div>
+      </form>
+      <form class="info_form" style="height:300px;">
+        <div class="field">
+  				<h3><a>You can share you food by posting an offer here!</a></h3>
+  			</div>
+        <div>
+          <p><img style="margin-top:30px;" src="images/foodfridge.jpg" width="300" height="150" alt="" /></p>
+        </div>
+      </form>
+		</div>
+	</div>
+
+</div>
+<div id="footer">
+	<p>&copy; Untitled. All rights reserved. Images by <a href="http://fotogrph.com/">Fotogrph</a>. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

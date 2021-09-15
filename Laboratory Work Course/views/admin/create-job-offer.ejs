@@ -1,0 +1,85 @@
+<%layout('layout') -%>
+<hr>
+<div class="container">
+    <div class="page-header">
+        <h1>Create Job Offer</h1>
+    </div>
+    <form class="form-horizontal" role="form" method="post">
+
+        <div class="form-group">
+            <label for="title" class="col-sm-3 control-label">I want to hire someone for:</label>
+            <div class="col-sm-9">
+                <input type="text" name="title" placeholder="Job Title" class="form-control" autofocus>
+                <span class="help-block">Job Title</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="field" class="col-sm-3 control-label">Field of work:</label>
+            <div class="col-sm-3">
+                <select id="field" class="form-control">
+                    <option>Computer Science</option>
+                    <option>Business</option>
+                    <option>Electrical Engineering</option> 
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="type" class="col-sm-3 control-label">Type of job:</label>
+            <div class="col-sm-3">
+                <select id="type" class="form-control">
+                    <option>Bachelor Thesis</option>
+                    <option>Masters Thesis</option>
+                    <option>Research</option> 
+                    <option>Summer job</option> 
+                </select>
+            </div>
+        </div>
+	<div class="form-group">
+            <label for="company" class="col-sm-3 control-label">Company name:</label>
+            <div class="col-sm-9">
+                <input type="text" name="company" placeholder="" class="form-control" autofocus>
+            </div>
+        </div>
+	<div class="form-group">
+            <label for="address" class="col-sm-3 control-label">Address:</label>
+            <div class="col-sm-9">
+                <input type="text" name="address" placeholder="" class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="startDate" class="col-sm-3 control-label">Start date:</label>
+            <div class="col-sm-9">
+                <input type="text" name="startDate" placeholder="" class="form-control" autofocus>
+            </div>
+        </div>
+	<div class="form-group">
+            <label for="endDate" class="col-sm-3 control-label">End date:</label>
+            <div class="col-sm-9">
+                <input type="text" name="endDate" placeholder="" class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">Contact e-mail:</label>
+            <div class="col-sm-9">
+                <input type="text" name="email" placeholder="bill.smith@gmail.com" class="form-control" autofocus>
+            </div>
+        </div>
+	<div class="form-group">
+            <label for="skills" class="col-sm-3 control-label">Desired skills:</label>
+            <div class="col-sm-9">
+                <input type="text" name="skills" class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description" class="col-sm-3 control-label">Description:</label>
+            <div class="col-sm-9">
+                <input type="text" name="description" placeholder="" class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-9 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </div>
+        </div>
+    </form> <!-- /form -->
+</div>

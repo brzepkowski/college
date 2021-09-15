@@ -1,0 +1,151 @@
+<% layout('layout') -%>
+
+<link rel="stylesheet" href="/css/jumbotron.css">
+<div class="jumbotron">
+  <div class="container">
+    <div class="page-header">
+      <h1>Welcome
+      </h1>
+
+    </div>
+    <div class="row">
+      <p>This is where you find your employer or employee</p>
+      <% if (!user) { %>
+        <div class="col-xs-1">
+          <p><a class="btn btn-primary btn-lg" href="/signup" role="button">Signup</a></p>
+        </div>
+        <div class="col-xs-1">
+          <p>
+            <a href="/login" class="btn btn-default btn-lg" role="button">Log In</a>
+          </p>
+        </div>
+        <% } else { %>
+
+          <div class="col-xs-1">
+            <p>
+              <a href="#" class="btn btn-default btn-lg" role="button">Welcome!</a>
+            </p>
+          </div>
+          <% } %>
+
+        </div>
+      </div>
+    </div>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-9">
+
+          <h1 class="text-left">Search by field</h1>
+          <hr>
+          <% for(var i=0; i<categories.length;i++){ %>
+            <div class="col-md-4">
+              <a href="/jobs/<%= categories[i]._id %>">
+                <h2 class="text-left"><span class="glyphicon glyphicon-chevron-right"></span> <%=categories[i].field %>
+                </h2>
+              </a>
+            </div>
+            <% } %>
+
+          </div>	<!-- /.col-lg-9 -->
+
+          <div class="col-lg-3">
+            <h1 class="text-center">Search by type</h1>
+            <hr>
+
+
+            <a href="#" class="btn btn-link">
+              <h2 class="text-left"><span class="glyphicon glyphicon-chevron-right"></span> Intern
+              </h2>
+            </a>
+
+          </div><!-- /.col-lg-3 -->
+
+        </div><!-- /.row -->
+
+        <hr class="company">
+
+        <!--Featured company area -->
+        <div class="row">
+          <h1>Featured companies</h1>
+          <div class="col-md-3">
+            <a href="#">
+              <img class="featurette-image img-responsive center-block" src="http://lorempixel.com/200/200" alt="company logo" style="width:200px;height:200px;">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img class="featurette-image img-responsive center-block" src="http://lorempixel.com/200/200" alt="company logo" style="width:200px;height:200px;">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img class="featurette-image img-responsive center-block" src="http://lorempixel.com/200/200" alt="company logo" style="width:200px;height:200px;">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img class="featurette-image img-responsive center-block" src="http://lorempixel.com/200/200" alt="company logo" style="width:200px;height:200px;">
+            </a>
+          </div>
+        </div>
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+        <h1>Featured Positions</h1>
+        <!--use square images here!!!!-->
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2>hdwjeu deuf keufj. <span class="text-muted">Job type</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+
+            <li><a href="#" class="href"><h4>More about this job</h4></a></li>
+          </div>
+          <div class="col-md-5">
+
+            <a href="#">
+              <img class="featurette-image img-responsive center-block" src="img/logo-2.jpg" alt="company logo" style="width:200px;height:200px;">
+
+            </a>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 col-md-push-5">
+            <h2>Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <li><a href="#" class="href"><h4>More about this job</h4></a></li>
+
+          </div>
+          <div class="col-md-5 col-md-pull-7">
+
+            <a href="#">
+              <img class="featurette-image img-responsive center-block" src="img/logo-1.jpeg" alt="Generic placeholder image" style="width:200px;height:200px;">
+            </a>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2>And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+
+            <li><a href="#" class="href"><h4>More about this job</h4></a></li>
+          </div>
+          <div class="col-md-5">
+            <a href="#">
+              <img class="featurette-image img-responsive center-block" src="img/logo-3.jpg" alt="Generic placeholder image" style="width:200px;height:200px;">
+            </a>
+          </div>
+        </div>
+      </div>

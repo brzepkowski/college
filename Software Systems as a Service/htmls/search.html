@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : ColoreGiallo
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20121026
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Search FOODIE</title>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper" style="height:1000px;">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="index.html">Foodie</a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">Homepage</a></li>
+					<li class="current_page_item"><a href="search.html">Search</a></li>
+					<li><a href="postoffer.html">Post offer</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="banner">
+      <form class="login_form">
+			<div class="post">
+				<h5 class="title"><a>Welcome to FOODIE project!</a></h5>
+				<div class="entry">
+					<p>Start searching for a food here.</p>
+          <form name="search" method="POST" action="search">
+            <div class="field">
+              Search for an item<input type="text" name="username">
+            </div>
+          <div class="button" style="margin:10px 50px 100px 100px;">
+            <input name="search_button" type="button" value="Search"/>
+          </div>
+          </form>
+				</div>
+				</div>
+      </form>
+      <form class="signup_form">
+				<div class="entry">
+					<h3 style="margin-top: 50px;">Type the name of the food you are interested in and find out our offers near you right now!</h3>
+				</div>
+      </form>
+		</div>
+	</div>
+
+	<!-- new part  -->
+	<div id="featured-content">
+		<div id="column1" style="width:auto;">
+			<h2>Results</h2>
+			<ol name="results_list">
+				<li>
+					<div class="result_item">
+						<div class="field" style="font-size:25px;">
+							Name
+						</div>
+						<div class="field">
+							<p>Description of the item. Very long and very unnecessary one...</p>
+						</div>
+						<div class="field" style="display:inline;">
+							Posted by:
+						</div>
+						<div class="field" style="display:inline;" name="post_author">
+							Name of the author
+						</div>
+
+					</div>
+				</li>
+			</ol>
+		</div>
+		<div id="column2">
+			<div class="button" >
+				<input name="accept_button" type="button" value="Accept offer" style="width:200px;margin-top:100px;"/>
+			</div>
+		</div>
+	</div>
+
+	<!-- end of the new part  -->
+
+</div>
+<div id="footer">
+	<p>&copy; Untitled. All rights reserved. Images by <a href="http://fotogrph.com/">Fotogrph</a>. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+</body>
+</html>

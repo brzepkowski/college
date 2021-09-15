@@ -1,0 +1,149 @@
+<% layout('layout') -%>
+<hr>
+<div class="container">
+
+    <div class="page-header">
+      <h1>Sign up</h1>
+  </div>
+
+  <% if (errors.length > 0) { %>
+  <div class="alert alert-danger alert-dismissible">
+    <button type="button" class="close" data-dismmiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <%= errors %>
+</div>
+<% } %>
+<form class="form-horizontal" role="form" method="post">
+
+    <div class="form-group">
+        <label for="name" class="col-sm-3 control-label">Full Name</label>
+        <div class="col-sm-9">
+            <input type="text" name="name" placeholder="your name" class="form-control" autofocus>
+            <span class="help-block">Last Name, First Name</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-3 control-label">Email</label>
+        <div class="col-sm-9">
+            <input type="email" name="email" placeholder="Email" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password" class="col-sm-3 control-label">Password</label>
+        <div class="col-sm-9">
+            <input type="password" name="password" placeholder="Password" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="dateOfBirth" class="col-sm-3 control-label">Date of Birth</label>
+        <div class="col-sm-9">
+            <input type="date" name="dateOfBirth" class="form-control">
+            <span class="help-block">Format: dd-mm-yyyy</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="country" class="col-sm-3 control-label">Country</label>
+        <div class="col-sm-9">
+            <select name="country" class="form-control">
+                <option>Finland</option>
+            </select>
+        </div>
+    </div> <!-- /.form-group -->
+    <div class="form-group">
+        <label class="control-label col-sm-3">Gender</label>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="female-radio" value="Female">Female
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="male-radio" value="Male">Male
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /.form-group -->
+    <div class="form-group">
+        <label for="field" class="col-sm-3 control-label">Field of study</label>
+        <div class="col-sm-9">
+            <select name="field" class="selectpicker" multiple>
+                <option>Chemical Engineering</option>
+                <option>Computer Science</option>
+                <option>International Business</option>
+                <option>Management</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="yearOfStudies" class="col-sm-3 control-label">Year of studies</label>
+        <div class="col-sm-1">
+            <select name="yearOfStudies" class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <label for="typeOfStudies" class="col-sm-1 control-label">of</label>
+        <div class="col-sm-3">
+            <select name="typeOfStudies" class="form-control">
+                <option>Bachelor</option>
+                <option>Masters</option>
+                <option>PhD</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3">Looking for job types</label>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="master_checkbox" value="Master Thesis">Master Thesis
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="summer_job_checkbox" value="Summer Job">Summer Job
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="anything_checkbox" value="Anything">Anything
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="skills" class="col-sm-3 control-label">Skills</label>
+        <div class="col-sm-9">
+            <input type="text" name="skills" placeholder="" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="keywords" class="col-sm-3 control-label">Keywords I want to follow</label>
+        <div class="col-sm-9">
+            <input type="text" name="keywords" placeholder="" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-9 col-sm-offset-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">I accept <a href="#">terms</a>
+                </label>
+            </div>
+        </div>
+    </div> <!-- /.form-group -->
+    <div class="form-group">
+        <div class="col-sm-9 col-sm-offset-3">
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </div>
+    </div>
+</form> <!-- /form -->

@@ -1,0 +1,22 @@
+<% layout('layout') -%>
+<hr>
+<div class="container">
+ <div class="row">
+  <div align="center">
+   <h2><%= user.name %></h2>
+   <p><strong>Email: </strong><%=user.email %></p>
+   <p><strong>Field of study: </strong> <%=user.fieldOfStudy %> </p>
+   <p><strong>Year of studies: </strong><%=user.yearOfStudies %> / <%=user.typeOfStudies %> </p>
+   <p><strong>Country: </strong> <%=user.country %> </p>
+   <p><strong>Looking for job types: </strong> <%=user.typeOfJob %></p>
+   <p><strong>Skills: </strong>
+    <span class="tags"><%=user.skills%></span> 
+  </p>
+  <p><strong>Followed keywords: </strong>
+    <span class="tags"><%=user.keywords%></span> 
+  </p>
+
+  <a href="/editProfile" class="btn btn-primary btn-lg">Edit Profile</a>
+
+</div>                      
+</div>

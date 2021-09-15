@@ -1,0 +1,84 @@
+<% layout('layout') -%>
+<hr>
+<div class="container">
+
+    <div class="page-header">
+      <h1>Edit your profile</h1>
+  </div>
+
+  <% if (message.length > 0) { %>
+  <div class="alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismmiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <%= message %>
+</div>
+<% } %>
+
+<form class="form-horizontal" role="form" method="post">
+    <div class="form-group">
+        <label for="name" class="col-sm-3 control-label">Name: </label>
+        <div class="col-sm-9">
+            <input type="text" name="name" value="<%=user.name %>" class="form-control">
+        </div>
+    </div> 
+		<div class="form-group">
+        <label for="email" class="col-sm-3 control-label">E-mail: </label>
+        <div class="col-sm-9">
+            <input type="email" name="email" value="<%=user.email %>" class="form-control">
+        </div>
+    </div>
+		<div class="form-group">
+        <label for="dateOfBirth" class="col-sm-3 control-label">Date of birth: </label>
+        <div class="col-sm-9">
+            <input type="date" name="dateOfBirth" value="<%=user.dateOfBirth %>" class="form-control">
+        </div>
+    </div>
+		<div class="form-group">
+        <label for="country" class="col-sm-3 control-label">Country: </label>
+        <div class="col-sm-9">
+            <input type="text" name="country" value="<%=user.country %>" class="form-control">
+        </div>
+    </div>
+		<div class="form-group">
+        <label for="fieldOfStudy" class="col-sm-3 control-label">Field of study: </label>
+        <div class="col-sm-9">
+            <input type="text" name="fieldOfStudy" value="<%=user.fieldOfStudy %>" class="form-control">
+        </div>
+    </div>
+		<div class="form-group">
+        <label for="yearOfStudies" class="col-sm-3 control-label">Year of studies: </label>
+        <div class="col-sm-9">
+            <input type="text" name="yearOfStudies" value="<%=user.yearOfStudies %>" class="form-control">
+        </div>
+    </div>
+		<div class="form-group">
+        <label for="typeOfStudies" class="col-sm-3 control-label">Type of studies: </label>
+        <div class="col-sm-9">
+            <input type="text" name="typeOfStudies" value="<%=user.typeOfStudies %>" class="form-control">
+        </div>
+    </div>
+		<div class="form-group">
+        <label for="typeOfJob" class="col-sm-3 control-label">Type of job: </label>
+        <div class="col-sm-9">
+            <input type="text" name="typeOfJob" value="<%=user.typeOfJob %>" class="form-control">
+        </div>
+    </div>
+		<div class="form-group">
+        <label for="skills" class="col-sm-3 control-label">Skills: </label>
+        <div class="col-sm-9">
+            <input type="text" name="skills" value="<%=user.skills %>" class="form-control">
+        </div>
+    </div>
+		<div class="form-group">
+        <label for="keywords" class="col-sm-3 control-label">Keywords: </label>
+        <div class="col-sm-9">
+            <input type="text" name="keywords" value="<%=user.keywords %>" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-9 col-sm-offset-3">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>
+    </div>
+</form> <!-- /form -->

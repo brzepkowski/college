@@ -1,0 +1,39 @@
+<% layout ('layout') -%>
+
+<hr>
+    <div class="container">
+
+    <!--Put Your content here -->
+	<div id="content">
+    <div class="row">
+
+
+	<div class="col-md-7">
+    <div class="page-header">
+      <h2><%= job.title %> <a href="#" class="href"><span class="text-muted"><%= job.company %></span></a></h2>
+    </div>
+    <p class="lead">Type: <%= job.type %></p>
+    <p class="lead">Address: <%= job.address%></p>
+    <p class="text-justify"><%= job.description %></p>
+
+	<button type="button" class="btn btn-primary btn-lg">Apply here</button>
+	<% if (user) { %>
+		<% if (user.admin) { %>
+			<a role="button" href="/edit/<%= job._id %>" class="btn btn-primary btn-lg btn-warning">Edit job offer</a>
+		<% } %>
+  <% } %>
+	<br><br>
+	</div>
+
+	<div class="col-md-5">
+	<br><br>
+
+	<h3>Application details</h3>
+	<b>Published:  <%= job.startDate %>
+	<b>Application deadline: </b> <%= job.endDate %>
+	<br><br>
+	<div class="row">
+	<button type="button" class="btn btn-primary btn-block btn-lg">Apply here</button>
+	</div>
+	
+      </div>

@@ -1,0 +1,26 @@
+<%layout('layout') -%>
+<hr>
+<div class="container">
+  <div class="page-header">
+    <h1>Add a Job Category</h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-9">
+      <% if (message.length > 0) { %>
+        <div class="alert alert-success alert-dismissible">
+          <button type="button" class="close" data-dismmiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <%= message %>
+        </div>
+        <% } %>
+        <form method="post">
+          <div class="form-group">
+            <label="field">Field: </label>
+            <input type="text" class="form-control" name="field">
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
